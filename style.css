@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: #001b1dfa;
+}
+
+.link-top .bar {
+  width: 765px;
+  height: 60px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #03393d, #014c52);
+  box-shadow:inset 2px 2px 4px rgb(23, 0, 0), inset -2px -2px 4px rgb(19, 0, 0);
+}
+
+.button-container {
+  display: flex;
+  gap: 46px;
+  margin-top: 55px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button .dot {
+  position: absolute;
+  width:  25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.247);
+  left: 45px;
+  top: -70px;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.button .light {
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+  width: 110px;
+  height: 180px;
+  clip-path: polygon(49% 0, 51% 0, 100% 100%, 0 100%);
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.1s;
+  opacity: 0;
+}
+
+.button button {
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 5px;
+  border-radius: 10px;
+  height: 115px;
+  width:  115px;
+  background: #03393d;
+  box-shadow: 2px 2px 4px rgb(23, 0, 0), -2px -2px 4px rgb(19, 0, 0);
+  border: none;
+  color: rgb(29, 0, 7);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.button .button1:hover {
+  box-shadow: inset 2px 2px 4px rgba(6, 22, 114, 0.849), inset -2px -2px 4px rgba(8, 17, 99, 0.767);
+}
+
+.button .button2:hover {
+  box-shadow: inset 2px 2px 4px rgb(24, 114, 6), inset -2px -2px 4px rgb(16, 99, 8);
+}
+
+.button .button3:hover {
+  box-shadow: inset 2px 2px 4px rgb(114, 6, 6), inset -2px -2px 4px rgb(99, 8, 8);
+}
+
+.button .button4:hover {
+  box-shadow: inset 2px 2px 4px rgb(90, 100, 98), inset -2px -2px 4px rgb(105, 134, 133);
+}
+
+.button .button5:hover {
+  box-shadow: inset 2px 2px 4px rgb(6, 17, 114), inset -2px -2px 4px rgb(17, 8, 99);
+}
+
+.button i {
+  font-size: 42px;
+}
+
+.button button span {
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.button:nth-child(1) .light {
+  background: linear-gradient(180deg, rgba(0, 81, 255, 0.781), rgba(0, 102, 255, 0.24));
+}
+
+.button:nth-child(2) .light {
+  background: linear-gradient(180deg, rgba(51, 255, 0, 0.781), rgba(43, 255, 0, 0.24));
+}
+
+.button:nth-child(3) .light {
+  background: linear-gradient(180deg, rgba(255, 0, 34, 0.781), rgba(255, 0, 43, 0.24));
+}
+
+.button:nth-child(4) .light {
+  background: linear-gradient(180deg, rgba(128, 128, 125, 0.781), rgba(97, 97, 95, 0.24));
+}
+
+.button:nth-child(5) .light {
+  background: linear-gradient(180deg, rgba(55, 0, 255, 0.781), rgba(25, 0, 255, 0.24));
+}
+
+.button:hover .light {
+  opacity: 1;
+}
+
+.button:nth-child(1):hover .dot {
+  background-color: rgba(0, 81, 255, 0.986);
+}
+
+.button:nth-child(2):hover .dot {
+  background-color: rgba(51, 255, 0, 0.979);
+}
+
+.button:nth-child(3):hover .dot {
+  background-color: rgba(255, 0, 34, 0.986);
+}
+
+.button:nth-child(4):hover .dot {
+  background-color: rgba(128, 128, 125, 0.973);
+}
+
+.button:nth-child(5):hover .dot {
+  background-color: rgba(55, 0, 255, 0.986);
+}
+
+.button:hover button {
+  color: aliceblue;
+}
